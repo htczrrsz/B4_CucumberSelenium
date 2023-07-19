@@ -3,6 +3,7 @@ package com.krafttech.stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class Login_StepDefs {
     @Given("The user is on the login page")
@@ -27,6 +28,7 @@ public class Login_StepDefs {
 
     @When("The user enters developer credentials")
     public void the_user_enters_developer_credentials() {
+        Assert.assertTrue(false);
         System.out.println("I enter developer userEmail and password and click login button");
     }
 
