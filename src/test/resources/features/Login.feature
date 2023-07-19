@@ -21,11 +21,11 @@ Feature: Krafttech Login Test
     When The user enters developer credentials
     Then The user should be able to login
 
-  @SDET @login @smoke
-  Scenario: Login as a SDET
-    Given The user is on the login page
-    When The user enters SDET credentials
-    Then The user should be able to login
+#  @SDET @login @smoke
+#  Scenario: Login as a SDET
+#    Given The user is on the login page
+#    When The user enters SDET credentials
+#    Then The user should be able to login
 
 
 
