@@ -5,10 +5,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class UserProfilePage extends BasePage{
 
     @FindBy(css = "[role='alert']")
     public WebElement profileUpdateMessage;
+
+    @FindBy(css = "[role='tablist']>li")
+    public List<WebElement> tabList;
 
     public void navigateToOverviewMenu(String tab){
        WebElement tabElement=Driver.get().findElement(By.xpath("//li/button[.='"+tab+"']"));
@@ -19,6 +24,8 @@ public class UserProfilePage extends BasePage{
     public String updateMessageGetText(){
         return  updateMessageGetText();
     }
+
+
 
 
 }
