@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/krafttech/stepDefinitions",
         dryRun = false,
-        tags = "@c_taskf1"
+        tags = "@editprofile"
 
 )
 

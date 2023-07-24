@@ -4,6 +4,7 @@ import com.krafttech.pages.DashboardPage;
 import com.krafttech.pages.LoginPage;
 import com.krafttech.utilities.BrowserUtils;
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -36,8 +37,7 @@ public class DashboardMenu_StepDefs {
     public void the_user_logs_in_using_following_menu(Map<String,String> userCredentials) {
         System.out.println("userCredentials = " + userCredentials);
         loginPage.login(userCredentials.get("username"),
-                userCredentials.get("password")
-        );
+                userCredentials.get("password"));
         Assert.assertEquals(userCredentials.get("name"),dashboardPage.userAccountName.getText());
     }
 
@@ -46,6 +46,7 @@ public class DashboardMenu_StepDefs {
     public void the_user_navigates_to_and_sub_menu(String menu, String subMenu) {
         dashboardPage.navigateToModule(menu,subMenu);
     }
+
 
 
 }

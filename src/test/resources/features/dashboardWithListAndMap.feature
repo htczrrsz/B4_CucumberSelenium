@@ -1,4 +1,3 @@
-@c_listAndMap
 Feature: Dashboard Menu Checks
 
   Background:
@@ -40,8 +39,8 @@ Feature: Dashboard Menu Checks
 #  navigates to my Profile menu
 #  see following menu  Overview, Edit Profile, Add Experience, Add Education, Change Password
 
-@c_taskf1
-  Scenario: Example-3 for Task
+  @c_taskf1
+  Scenario: Example-4 for Task
 #    Given The user is on the login page
     When The user logs in using "miamia@gmail.com" and "Mia123456"
     And The user navigates to "miamia" and "My Profile" sub menu
@@ -51,6 +50,30 @@ Feature: Dashboard Menu Checks
       | Add Experience  |
       | Add Education   |
       | Change Password |
+
+
+
+  Scenario Outline: Example-4 for "<name>" with Scenario Outline
+    When The user logs in using following menu
+      | username | <userEmail> |
+      | password | <password>  |
+      | name     | <name>      |
+    Then The user should be able to login
+    Then The user should be able to see following menu
+      | Dashboard  |
+      | Developers |
+      | Components |
+      | Forms      |
+      | JavaScript |
+      | <name>    |
+
+    Examples:
+      | userEmail        | password  | name   |
+      | miamia@gmail.com | Mia123456 | miamia |
+      | john@gmail.com   | John1234. | John   |
+
+
+
 
 
 #  Class task f2 HW

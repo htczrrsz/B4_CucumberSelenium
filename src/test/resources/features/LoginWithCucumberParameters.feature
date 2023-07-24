@@ -9,7 +9,7 @@ Feature: Login tests with Cucumber parameters
     Then Validate that username is "mike"
 
     #John
-   @johnParameter  @parameterizeMethods
+  @johnParameter  @parameterizeMethods
   Scenario: Login with John - Cucumber Parameters
     Given The user is on the login page
     When The user logs in using "john@gmail.com" and "John1234."
@@ -17,8 +17,19 @@ Feature: Login tests with Cucumber parameters
     Then Validate that username is "John"
 
      #Eddie Murphy
-   @eddieParameter @parameterizeMethods
+  @eddieParameter @parameterizeMethods
   Scenario: Login with Eddie - Cucumber Parameters
     Given The user is on the login page
     When The user logs in using "eddiem@kraft.com" and "eddiem12"
     Then The user should be able to login
+
+
+
+  Scenario Outline: Different "<name>" user type
+    Given The user is on the login page
+    When The user logs in using "<userEmail>" and "<password>"
+    Then Validate that username is "<name>"
+    Examples:
+      | userEmail        | password  | name   |
+      | miamia@gmail.com | Mia123456 | miamia |
+      | john@gmail.com   | John1234. | John   |
