@@ -1,3 +1,4 @@
+@regression
 Feature: Dashboard Menu Checks
 
   Background:
@@ -78,4 +79,9 @@ Feature: Dashboard Menu Checks
 
 #  Class task f2 HW
 #  go to webpage   https://demoqa.com/
-#  verify that user see following menu list elements, forms
+#  verify that user see following menu list elements, forms, alerts ...
+
+  @wip
+  Scenario: Demoqa lists
+    Given The user is on the demoqa webpage
+

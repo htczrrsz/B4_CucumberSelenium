@@ -3,6 +3,7 @@ package com.krafttech.stepDefinitions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class NavigationMenu_StepDefs {
 
@@ -59,6 +60,7 @@ public class NavigationMenu_StepDefs {
     @When("Go to My Profile menu")
     public void go_to_my_profile_menu() {
         System.out.println("Go to My Profile menu");
+
     }
 
 

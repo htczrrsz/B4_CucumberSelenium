@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae788dde-e731-4108-bee1-2b22f805c88c" name="Changes" comment="list and map">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/editProfilePage.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/negativeLoginTests.feature" afterDir="false" />
+    <list default="true" id="ae788dde-e731-4108-bee1-2b22f805c88c" name="Changes" comment="Data Driven">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/ComponenentsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/runners/FailedTestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/stepDefinitions/Components_StepDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/componentsScenarioOutline.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/EditProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/EditProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/stepDefinitions/DashboardMenu_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/stepDefinitions/DashboardMenu_StepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/stepDefinitions/Login_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/stepDefinitions/Login_StepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/stepDefinitions/UserProfile_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/stepDefinitions/UserProfile_StepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/stepDefinitions/NavigationMenu_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/stepDefinitions/NavigationMenu_StepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/LoginWithCucumberParameters.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LoginWithCucumberParameters.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/NavigationMenu.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/NavigationMenu.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/dashboardWithListAndMap.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/dashboardWithListAndMap.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/editProfilePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/editProfilePage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/negativeLoginTests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/negativeLoginTests.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689879328624</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Data Driven">
+      <created>1690226000262</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690226000262</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,7 +171,8 @@
     <MESSAGE value="utilities and pages" />
     <MESSAGE value="parameters" />
     <MESSAGE value="list and map" />
-    <option name="LAST_COMMIT_MESSAGE" value="list and map" />
+    <MESSAGE value="Data Driven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data Driven" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

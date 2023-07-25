@@ -1,3 +1,4 @@
+@regression
 Feature: Edit Profile Page
 
   @editprofile
@@ -19,3 +20,5 @@ Feature: Edit Profile Page
       | miamia@gmail.com | Mia123456 | miamia | My Profile | Edit Profile | graduated SDET 2023 | Amazon | QA Test Engineer | www.amazon.com | London | Selenium, Java |
       | john@gmail.com | John1234. | John | My Profile | Edit Profile | graduated SDET 2022 | KraftTech | QA | www.krafttech.com | Istanbul | Selenium, Java |
       | mike@gmail.com | mike1234 | Mike | My Profile | Edit Profile | graduated SDET 2021 | Google | QA | www.google.com | California | Selenium, Java |
+
+#    Then The user should be able to see credentials that have been added

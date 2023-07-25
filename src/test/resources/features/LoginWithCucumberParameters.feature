@@ -1,3 +1,4 @@
+@regression
 Feature: Login tests with Cucumber parameters
 
   #mike
