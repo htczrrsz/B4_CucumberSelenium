@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae788dde-e731-4108-bee1-2b22f805c88c" name="Changes" comment="updated: parallel execution driver class and pom.xml" />
+    <list default="true" id="ae788dde-e731-4108-bee1-2b22f805c88c" name="Changes" comment="last commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690226000262</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="last commit">
+      <created>1690518439863</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690518439863</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,7 +171,8 @@
     <MESSAGE value="parameters" />
     <MESSAGE value="list and map" />
     <MESSAGE value="Data Driven" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data Driven" />
+    <MESSAGE value="last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="last commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
