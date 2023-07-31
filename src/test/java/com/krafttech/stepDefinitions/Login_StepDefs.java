@@ -1,18 +1,28 @@
 package com.krafttech.stepDefinitions;
 
+import com.krafttech.pages.DashboardPage;
 import com.krafttech.pages.LoginPage;
 import com.krafttech.utilities.BrowserUtils;
 import com.krafttech.utilities.ConfigurationReader;
 import com.krafttech.utilities.Driver;
+import com.krafttech.utilities.ExcelUtil;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
+import java.util.List;
+import java.util.Map;
+
 
 public class Login_StepDefs {
 
     LoginPage loginPage= new LoginPage();
+    DashboardPage dashboardPage= new DashboardPage();
+
+    ExcelUtil excelUtil= new ExcelUtil("src/test/resources/KT_B4_DDF_test.xlsx","QA 1");
+    List<Map<String, String>> dataList = excelUtil.getDataList();
+
 
 
     @Given("The user is on the login page")
@@ -68,6 +78,35 @@ public class Login_StepDefs {
         BrowserUtils.waitFor(1);
         String actualWarningMessageTest = loginPage.getWarningMessageTest(expectedMessage);
         Assert.assertEquals(expectedMessage,actualWarningMessageTest);
+    }
+
+
+    @When("The user enters {string} and {int}")
+    public void the_user_enters_and(String sheetName, Integer rowNumber) {
+//        ExcelUtil excelUtil= new ExcelUtil("src/test/resources/KT_B4_DDF_test.xlsx",sheetName);
+//        List<Map<String, String>> dataList = excelUtil.getDataList();
+//
+//        loginPage.login(dataList.get(rowNumber).get("username"),dataList.get(0).get("password"));
+        loginPage.login(loginPage.getDataList(sheetName).get(rowNumber).get("username"),
+                loginPage.getDataList(sheetName).get(rowNumber).get("password"));
+
+
+    }
+    @Then("The user verify that account name is equal {string} {int}")
+    public void the_user_verify_that_account_name_is_equal(String sheetName, Integer rowNumberForName) {
+        String actualUserName = loginPage.userAccountName.getText();
+        System.out.println("actualUserName = " + actualUserName);
+//        Assert.assertEquals(actualUserName,dataList.get(rowNumberForName).get("name"));
+
+        Assert.assertEquals(loginPage.getDataList(sheetName).get(rowNumberForName).get("name"),actualUserName);
+    }
+
+
+    @Then("The user verify that job name is equal {int} int the {string}")
+    public void the_user_verify_that_job_name_is_equal_int_the(Integer rowNumberForJob, String sheetName) {
+        String actualJob= dashboardPage.getProfileDetails(loginPage.getDataList(sheetName).get(rowNumberForJob).get("job"));
+        System.out.println("actualJob = " + actualJob);
+        Assert.assertEquals(loginPage.getDataList(sheetName).get(rowNumberForJob).get("job"),actualJob);
     }
 
 

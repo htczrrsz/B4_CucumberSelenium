@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae788dde-e731-4108-bee1-2b22f805c88c" name="Changes" comment="last commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/TestingExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/utilities/ExcelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/KT_B4_DDF_test.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/LoginTestWithDDF.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/stepDefinitions/Login_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/stepDefinitions/Login_StepDefs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +54,27 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/com/krafttech" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.krafttech.utilities" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.CukesRunner">
+    <configuration name="TestingExcel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.krafttech.pages.TestingExcel" />
+      <module name="B4_CucumberSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.krafttech.pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Different name user type" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginWithCucumberParameters.feature" />
@@ -85,10 +113,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Application.TestingExcel" />
         <item itemvalue="Cucumber Java.Scenario: Different name user type" />
         <item itemvalue="JUnit.CukesRunner" />
         <item itemvalue="Cucumber Java.Scenario: Different name user type" />
-        <item itemvalue="JUnit.CukesRunner" />
       </list>
     </recent_temporary>
   </component>
