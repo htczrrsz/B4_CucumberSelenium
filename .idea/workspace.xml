@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae788dde-e731-4108-bee1-2b22f805c88c" name="Changes" comment="excel" />
+    <list default="true" id="ae788dde-e731-4108-bee1-2b22f805c88c" name="Changes" comment="excel">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krafttech/pages/BasePage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
